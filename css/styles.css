@@ -36,6 +36,8 @@ image {
   padding-bottom: 24px;
   padding-top: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
   width: 1158px;
@@ -95,15 +97,22 @@ image {
 .header-nav-link:active {
   color: #404bbf;
 }
-
+.studio {
+  position: relative;
+  color: #404bbf;
+}
 .studio:hover::after,
 .studio:active::after {
-  width: 48px;
   height: 4px;
   background-color: #404bbf;
   content: '';
   display: flex;
   margin-top: 20px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 2px;
 }
 
 .address {
@@ -150,6 +159,9 @@ img {
     ),
     url(../images/image-bg.jpg);
   background-size: cover;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 button {
@@ -185,7 +197,7 @@ button {
   margin-bottom: 68px;
   min-width: 169px;
   border-radius: 4px;
-  transition-property: background;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -217,6 +229,16 @@ button {
   gap: 24px;
 }
 
+.principles-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
 .icon {
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -300,11 +322,10 @@ button {
 .worker-icon-list {
   display: flex;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
-  padding: 0px 16px 32px 16px;
+  justify-content: center;
 }
 .icon-soc {
-  fill: #c4c4c4;
+  fill: #f4f4fd;
 }
 .worker-icon-link {
   width: 40px;
@@ -314,6 +335,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.worker-icon-link:hover,
+.worker-icon-link:focus {
+  background-color: #404bbf;
 }
 
 .portfolio {
@@ -354,11 +380,10 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   height: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
   transform: translateY(100%);
-  transition-duration: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-cover-wrap {
@@ -393,13 +418,15 @@ button {
 
 .footer {
   background: #2e2f42;
-  display: block;
+  display: flex;
+  align-items: baseline;
 }
 
 .text {
   display: block;
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -466,6 +493,7 @@ button {
   display: flex;
   align-items: center;
 }
-.footer-icon-link:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: #31d0aa;
 }
