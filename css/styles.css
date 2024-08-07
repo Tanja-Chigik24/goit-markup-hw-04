@@ -101,13 +101,13 @@ image {
   position: relative;
   color: #404bbf;
 }
+
 .studio:hover::after,
 .studio:active::after {
   height: 4px;
   background-color: #404bbf;
   content: '';
   display: flex;
-  margin-top: 20px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -332,6 +332,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .worker-icon-link:hover,
@@ -416,7 +417,6 @@ button {
 .footer {
   background: #2e2f42;
   display: flex;
-  align-items: baseline;
 }
 
 .text {
@@ -488,7 +488,7 @@ button {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .footer-icon-link:hover,
 .footer-icon-link:focus {
