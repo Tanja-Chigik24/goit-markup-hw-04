@@ -87,9 +87,6 @@ image {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
@@ -97,17 +94,19 @@ image {
 .header-nav-link:active {
   color: #404bbf;
 }
-.header-nav-link:first-child {
+.header-nav-link.studio {
   position: relative;
   color: #404bbf;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link:first-child:hover::after,
-.header-nav-link:first-child:active::after {
+.header-nav-link.studio:hover::after,
+.header-nav-link.studio:active::after {
   height: 4px;
   background-color: #404bbf;
   content: '';
-  display: flex;
   width: 100%;
   position: absolute;
   left: 0;
