@@ -97,13 +97,13 @@ image {
 .header-nav-link:active {
   color: #404bbf;
 }
-.studio {
+.header-nav-link:first-child {
   position: relative;
   color: #404bbf;
 }
 
-.studio:hover::after,
-.studio:active::after {
+.header-nav-link:first-child:hover::after,
+.header-nav-link:first-child:active::after {
   height: 4px;
   background-color: #404bbf;
   content: '';
