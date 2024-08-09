@@ -293,9 +293,9 @@ button {
   padding: 32px 0;
 }
 
-.team-image {
+/*.team-image {
   background: url('path_to_image');
-}
+}*/
 
 .team-subtitle {
   font-weight: 500;
@@ -393,9 +393,9 @@ button {
   border-top: none;
   margin-bottom: 8px;
 }
-.portfolio-image {
+/*.portfolio-image {
   background: url('path_to_image');
-}
+}*/
 
 .portfolio-subtitle {
   font-weight: 500;
