@@ -102,7 +102,7 @@ image {
   color: #404bbf;
 }
 
-.header-nav-link.studio:active::after {
+.header-nav-link.studio::after {
   height: 4px;
   background-color: #404bbf;
   content: '';
