@@ -97,12 +97,8 @@ image {
 .header-nav-link.studio {
   position: relative;
   color: #404bbf;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link.studio:hover::after,
 .header-nav-link.studio:active::after {
   height: 4px;
   background-color: #404bbf;
@@ -112,6 +108,7 @@ image {
   left: 0;
   bottom: -1px;
   border-radius: 2px;
+  display: block;
 }
 
 .address {
